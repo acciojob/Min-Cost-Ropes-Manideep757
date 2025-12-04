@@ -9,8 +9,7 @@ function mincost(arr)
 		let total = firstElement + secondElement;
 		cost += total;
 		sortedArr.push(total);
-		total = 0;
-		sortedArr.sort();
+		sortedArr.sort((a,b)=>a-b);
 	}
 	return cost;
 // return the min cost
